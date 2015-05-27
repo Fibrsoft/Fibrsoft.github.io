@@ -1,0 +1,119 @@
+/* 
+* Main.css mstyle page for peek application website
+* @version 1.0 (No Revisions)
+* Application owned by Fibrsoft LLC
+* @author Karan Khatter (Co-Founder & CTO)
+*/
+
+
+html, body {
+    height: 100%;
+    width: 100%;
+    padding:0;
+    margin: 0;
+    background-color: #5E869F;
+}
+
+@font-face {
+    font-family: 'CaviarDreams';
+    src: url('CaviarDreams.ttf') format('truetype')
+
+}
+
+.peekTitle {
+    font-family: CaviarDreams;
+    color: white;
+    text-align: center;
+    font-size: 90px;
+    margin-top: 175px;
+}
+
+.verticalGap {
+    height: 5%;   
+    
+}
+.menu {
+    height: 10%;
+    width: 100%;
+    display: inline-block;
+    align-content: center;
+    background-color: #646060;
+    padding-left: 0px;
+    text-align:center;
+}
+
+.menuBarCell {
+    display: inline-block;
+    height: 100%;
+    width: 10%;
+    overflow:hidden;
+    align-content: center;
+    color: white;
+    font-size: 25px;
+}
+
+.menuBarCell:hover {
+    background-color: #c4c4c4;
+    color: white;
+    z-index: -10px;
+    
+}
+
+.menuBarCellFont {
+    font-family: CaviarDreams;
+    text-align: center;
+    
+}
+
+.peekApp {
+    background: white url(../Images/Range.png) repeat-x center bottom;
+    height: 75%;
+}
+
+.peekAppContent {
+    position: relative;
+    height:400px; 
+    width:25%;
+    top: 150px;
+    border-top: 3px dotted black; 
+    border-bottom: 3px dotted black; 
+    display: inline-table;
+    margin-left: 50px;
+}
+
+#content1:hover {
+    -webkit-box-shadow:0 0 330px #FFDF22; 
+    -moz-box-shadow: 0 0 330px #FFDF22;
+    -ms-box-shadow: 0 0 330px #FFDF22; 
+    box-shadow:0 0 330px #FFDF22;
+}
+
+#content2:hover {
+    -webkit-box-shadow:0 0 330px #FFDF22; 
+    -moz-box-shadow: 0 0 330px #FFDF22;
+    -ms-box-shadow: 0 0 330px #FFDF22; 
+    box-shadow:0 0 330px #FFDF22;
+}
+
+#content3:hover {
+    -webkit-box-shadow:0 0 330px #FFDF22; 
+    -moz-box-shadow: 0 0 330px #FFDF22;
+    -ms-box-shadow: 0 0 330px #FFDF22; 
+    box-shadow:0 0 330px #FFDF22;
+}
+
+.contactUs {
+    background-color: white;
+    height: 75%;
+    padding-bottom: 25%;
+}
+
+.peekHeaderFont {
+    font-family: CaviarDreams;   
+}
+
+.stepHeaderDivs {
+    height: 25%;
+    position: relative;
+    padding-top: 40px;
+}
