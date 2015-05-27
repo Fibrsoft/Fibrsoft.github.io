@@ -43,58 +43,59 @@
     </script>
 <body>
     <div id="peekTitle" class="peekTitle">
-        peek</div>
+        peekly</div>
     <div id="verticalGap" class="verticalGap"></div>
     <div id="menuBar" class="menu">
         <div id="link1" class="menuBarCell" onclick="whoWeAre()" >
-            <img id="aboutImage" src="Images/About.png" style="position:relative; margin-top:15%">   
-            <p id="peekAppLabel" class="menuBarCellFont">peek App</p>
+            <img id="aboutImage" src="Images/About.png" style="position:relative; margin-top:15%; height: 40%">   
+            <p id="peekAppLabel" class="menuBarCellFont">peekly App</p>
         </div>
-        <div id="link2" class="menuBarCell">
-                
+        <div id="link2" class="menuBarCell" onclick="joinAGroupDetailed()">
+            <img id="aboutImage" src="Images/How.png" style="position:relative; margin-top:15%; height: 40%">   
+            <p id="peekAppLabel" class="menuBarCellFont">How it works</p>  
         </div>
         <div id="link3" class="menuBarCell"  onclick="contactUs()">
-            <img src="../Images/Contacts.png" style="padding-top:10%">
+            <img src="Images/Contact.png" style="padding-top:15%; height: 40%">
                 <p id="contactLabel" class="menuBarCellFont">Contact</p>
         </div>
     </div>
     <div id="peekApp" class="peekApp">
-        <div class="peekHeaderFont" style="text-align:center; font-size:35px; padding-top:25px">"peek is a social photo sharing app</div>
-        <div class="peekHeaderFont" style="text-align:center; font-size:35px">where you join specific groups</div>
-        <div class="peekHeaderFont" style="text-align:center; font-size:35px">and post related pictures"</div>
+        <div class="peekHeaderFont" style="text-align:center; font-size:30px; padding-top:25px">"peekly is a social photo sharing app</div>
+        <div class="peekHeaderFont" style="text-align:center; font-size:30px">where you join specific groups</div>
+        <div class="peekHeaderFont" style="text-align:center; font-size:30px">and post related pictures"</div>
         <div id="contentContainer" style="height: 50%; text-align: center; ">
             <div id="content1" class="peekAppContent" onclick="joinAGroupDetailed()">
             <img src="Images/zoomin.png" style=" display: block; position:relative;margin-left:auto; margin-right: auto; top: -60px"> 
-            <h1 class="peekHeaderFont" style="font-size: 50px; height: auto; margin: 0;">Join a Group</h1>
-                <p class="peekHeaderFont" style="font-size: 30px;">Find a group that you enjoy. Join that group and view pictures from other members. You can like the picture's to help them get to the peak each week. </p>
+            <h1 class="peekHeaderFont" style="font-size: 35px; height: auto; margin: 0;">Join a Group</h1>
+                <p class="peekHeaderFont" style="font-size: 22px;">Find a group that you enjoy. Join that group and view pictures from other members. You can like the picture's to help them get to the peak each week. </p>
             </div>
             
             <div id="content2" class="peekAppContent" onclick = "snapAPhotoDetailed()">
             <img src="Images/polaroidcamera.png" style=" display: block; position:relative;margin-left:auto; margin-right: auto; top: -60px"> 
-            <h1 class="peekHeaderFont" style="font-size: 50px; height: auto; margin: 0;">Snap a photo</h1>
-                <p class="peekHeaderFont" style="font-size: 30px;">Take pictures of the world around you and post it in any group you're a part of.</p> 
+            <h1 class="peekHeaderFont" style="font-size: 35px; height: auto; margin: 0;">Snap a photo</h1>
+                <p class="peekHeaderFont" style="font-size: 22px;">Take pictures of the world around you and post it in any group you're a part of.</p> 
             </div>
             
             <div id="content3" class="peekAppContent" onclick="getToThePeakDetailed()">
             <img src="Images/heart.png" style=" display: block; position:relative;margin-left:auto; margin-right: auto; top: -60px"> 
-            <h1 class="peekHeaderFont" style="font-size: 50px; height: auto; margin: 0;">Get to the Peak</h1>
-                <p class="peekHeaderFont" style="font-size: 30px;">Each week we determine the most popular pictures in each group. The top pictures will stick around and the rest will go. Take good pictures and get to the peak!</p>       
+            <h1 class="peekHeaderFont" style="font-size: 35px; height: auto; margin: 0;">Get to the Peak</h1>
+                <p class="peekHeaderFont" style="font-size: 22px;">Each week we determine the most popular pictures in each group. The top pictures will stick around and the rest will go. Take good pictures and get to the peak!</p>       
             </div>
         </div>
     </div>
     <div id="joinGroupSection" style="background-color:#646060; height:50%;">
         <div class="stepHeaderDivs">
-            <img src="Images/JoinAGroupImages.png">
+            <img src="Images/JoinAGroupImages.png" style="width: 30%">
         </div>
     </div>
     <div id="snapAPhotoSection" style="background-color:#c4c4c4; height:50%;">
         <div class="stepHeaderDivs">
-            <img src="Images/snapAPhotoImages.png">
+            <img src="Images/snapAPhotoImages.png" style="width: 30%">
         </div>
     </div>
     <div id="getToThePeakSection" style="background-color:#646060; height:50%;">
         <div class="stepHeaderDivs">
-            <img src="Images/peakImages.png">
+            <img src="Images/peakImages.png" style="width: 30%">
         </div>
     </div>
     <div id="contactUs" class="contactUs">

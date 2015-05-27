@@ -14,13 +14,6 @@ html, body {
     background-color: #5E869F;
 }
 
-.page {
-    transform-origin: 0 0; 
-    -webkit-transform-origin: 0 0; 
-    transform: scale(0.75); 
-   -webkit-transform: scale(0.75);
-}
-
 @font-face {
     font-family: 'CaviarDreams';
     src: url('CaviarDreams.ttf') format('truetype')
@@ -40,7 +33,7 @@ html, body {
     
 }
 .menu {
-    height: 10%;
+    height: 12%;
     width: 100%;
     display: inline-block;
     align-content: center;
@@ -69,17 +62,18 @@ html, body {
 .menuBarCellFont {
     font-family: CaviarDreams;
     text-align: center;
+    font-size: 20px;
     
 }
 
 .peekApp {
     background: white url(../Images/Range.png) repeat-x center bottom;
-    height: 75%;
+    height: 100%;
 }
 
 .peekAppContent {
     position: relative;
-    height:400px; 
+    height:300px; 
     width:25%;
     top: 150px;
     border-top: 3px dotted black; 
