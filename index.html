@@ -3,12 +3,29 @@
     <head>
     <link rel="stylesheet" href="main.css">
     </head>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <script src="stellar.js-master/jquery.stellar.min.js"></script>
+    <script></script>
     <script>
+    window.addEventListener("scroll", parallaxEffect, false);
+   
+    //working parallax effect   
+    function parallaxEffect() {
+        var topValue = ($(window).scrollTop());
+        if(topValue == 100) $("#content1").stop(true,true).fadeIn("slow");
+        else if(topValue == 200) $("#content2").stop(true,true).fadeIn("slow");
+        else if(topValue == 300) $("#content3").stop(true,true).fadeIn("slow");
+        else if(topValue > 400) {$("#content1").stop(true,true).fadeIn("slow");$("#content2").stop(true,true).fadeIn("slow");$("#content3").stop(true,true).fadeIn("slow");}
+        
+            
+        }
+
+        
     
     //functions for the menu bar    
     
     function whoWeAre() {
+        parallaxEffect();
         $('html,body').animate({
         scrollTop: $(".peekApp").offset().top},
         'slow');
@@ -20,26 +37,14 @@
         'slow');
     }
     
-    //functions for the peek deatiled sections
-        
-    function joinAGroupDetailed() {
-    $('html,body').animate({
-        scrollTop: $("#joinGroupSection").offset().top},
+    function howItWorks() {
+        $('html,body').animate({
+        scrollTop: $(".howItWorks").offset().top},
         'slow');
     }
     
-    function snapAPhotoDetailed() {
-    $('html,body').animate({
-        scrollTop: $("#snapAPhotoSection").offset().top},
-        'slow');
-    }    
         
-     function getToThePeakDetailed() {
-    $('html,body').animate({
-        scrollTop: $("#getToThePeakSection").offset().top},
-        'slow');
-    }  
-    
+        
     </script>
 <body>
     <div id="peekTitle" class="peekTitle">
@@ -50,7 +55,7 @@
             <img id="aboutImage" src="Images/About.png" style="position:relative; margin-top:15%; height: 40%">   
             <p id="peekAppLabel" class="menuBarCellFont">peekly App</p>
         </div>
-        <div id="link2" class="menuBarCell" onclick="joinAGroupDetailed()">
+        <div id="link2" class="menuBarCell" onclick="howItWorks()">
             <img id="aboutImage" src="Images/How.png" style="position:relative; margin-top:15%; height: 40%">   
             <p id="peekAppLabel" class="menuBarCellFont">How it works</p>  
         </div>
@@ -60,44 +65,91 @@
         </div>
     </div>
     <div id="peekApp" class="peekApp">
-        <div class="peekHeaderFont" style="text-align:center; font-size:30px; padding-top:25px">"peekly is a social photo sharing app</div>
-        <div class="peekHeaderFont" style="text-align:center; font-size:30px">where you join specific groups</div>
-        <div class="peekHeaderFont" style="text-align:center; font-size:30px">and post related pictures"</div>
+    
+        
+        
+        <div class="peekHeaderFont" style="text-align:center; font-size:30px; padding-top:25px">Peekly lets you view and interact with everyday</div>
+        <div class="peekHeaderFont" style="text-align:center; font-size:30px">life around you through categorized communities</div>
+        <div class="peekHeaderFont" style="text-align:center; font-size:30px">of both local strangers and private friends</div>
         <div id="contentContainer" style="height: 50%; text-align: center; ">
-            <div id="content1" class="peekAppContent" onclick="joinAGroupDetailed()">
+            <div id="content1" class="peekAppContent" style="display:none;">
             <img src="Images/zoomin.png" style=" display: block; position:relative;margin-left:auto; margin-right: auto; top: -60px"> 
             <h1 class="peekHeaderFont" style="font-size: 35px; height: auto; margin: 0;">Join a Group</h1>
                 <p class="peekHeaderFont" style="font-size: 22px;">Find a group that you enjoy. Join that group and view pictures from other members. You can like the picture's to help them get to the peak each week. </p>
             </div>
             
-            <div id="content2" class="peekAppContent" onclick = "snapAPhotoDetailed()">
+            <div id="content2" class="peekAppContent" style="display:none">
             <img src="Images/polaroidcamera.png" style=" display: block; position:relative;margin-left:auto; margin-right: auto; top: -60px"> 
             <h1 class="peekHeaderFont" style="font-size: 35px; height: auto; margin: 0;">Snap a photo</h1>
                 <p class="peekHeaderFont" style="font-size: 22px;">Take pictures of the world around you and post it in any group you're a part of.</p> 
             </div>
             
-            <div id="content3" class="peekAppContent" onclick="getToThePeakDetailed()">
+            <div id="content3" class="peekAppContent" style="display:none">
             <img src="Images/heart.png" style=" display: block; position:relative;margin-left:auto; margin-right: auto; top: -60px"> 
             <h1 class="peekHeaderFont" style="font-size: 35px; height: auto; margin: 0;">Get to the Peak</h1>
                 <p class="peekHeaderFont" style="font-size: 22px;">Each week we determine the most popular pictures in each group. The top pictures will stick around and the rest will go. Take good pictures and get to the peak!</p>       
             </div>
         </div>
+        <div id="downloadDiv" style="width:100%; text-align:center"><img src="Images/download.png" style="display: absolute; height: 100px; width: 400px; align content" onClick="alert('Download App Link');"></div>
+        
     </div>
-    <div id="joinGroupSection" style="background-color:#646060; height:50%;">
-        <div class="stepHeaderDivs">
-            <img src="Images/JoinAGroupImages.png" style="width: 30%">
+    
+    <div id="howItWorks" class="explainedSections" style="background: #646060">
+        <div style="height:75%;width:17%; display: inline-block; padding-top:4%; padding-left: 4%; float:left;">
+            <img src="Images/blankIphoneScreen.png" style="height:100%;">
+        </div>
+        <div id="firstSectionCanoe" class="canoeImages">
+        <img src="Images/canoe.png" style="height:100px;">
+        </div>
+        <div id="localCommunityGroups" class="explainedSectionText" style="float:right; padding-right: 80px;">
+        <h1 style="color: #66FB97">Local Community Group</h1>
+            <p style="font-family: CaviarDreams; color:white; font-size: 35px;">Find and join hundreds of local community groups that you may enjoy. Anonymously view and reply to other's Peeks. Or add your own to the mix!</p>
         </div>
     </div>
-    <div id="snapAPhotoSection" style="background-color:#c4c4c4; height:50%;">
-        <div class="stepHeaderDivs">
-            <img src="Images/snapAPhotoImages.png" style="width: 30%">
+    
+    <div class="explainedSections" style="background:#999999">
+    <div id="localCommunityGroups" class="explainedSectionText" style="padding-left: 80px; float:left;">
+        <h1 style="color: #A027A0">Private Friend Groups</h1>
+            <p style="font-family: CaviarDreams; color:black; font-size: 35px;">Join or create private groups for just you and friends, or as we call them, Groupies. Share Peeks among just yourselves for a personal experience!</p>
+        </div>   
+    <div style="height:75%;width:17%; display: inline-block; padding-top:4%; padding-right: 4%; float:right">
+            <img src="Images/blankIphoneScreen.png" style="height:100%;">
         </div>
     </div>
-    <div id="getToThePeakSection" style="background-color:#646060; height:50%;">
-        <div class="stepHeaderDivs">
-            <img src="Images/peakImages.png" style="width: 30%">
+    
+    <div class="explainedSections" style="background: #646060">
+        <div style="height:75%;width:17%; display: inline-block; padding-top:4%; padding-left: 4%;float:left;">
+            <img src="Images/blankIphoneScreen.png" style="height:100%;">
+        </div>
+        <div id="localCommunityGroups" class="explainedSectionText" style="float:right; padding-right: 80px;">
+        <h1 style="color: #66FB97">Snap & Submit Photos</h1>
+            <p style="font-family: CaviarDreams; color:white; font-size: 35px;">Quickly snap photos using innovative techniques. Post those photos as Peeks to the groups where they belong, and the community may give you love for it.</p>
         </div>
     </div>
+    
+    <div class="explainedSections" style="background:#999999">
+    <div id="localCommunityGroups" class="explainedSectionText" style="padding-left: 80px; float:left;">
+        <h1 style="color: #A027A0">Seek the Peak</h1>
+            <p style="font-family: CaviarDreams; color:black; font-size: 35px;">All of your Peeks, replies, and votes aren't for nothing. As others interact with the stuff you post, you gain valuable points!</p>
+        </div>   
+    <div style="height:75%;width:17%; display: inline-block; padding-top:4%; padding-right: 4%; float:right">
+            <img src="Images/blankIphoneScreen.png" style="height:100%;">
+        </div>
+    </div>
+    
+    <div class="explainedSections" style="background: #646060">
+        <div style="height:75%;width:17%; display: inline-block; padding-top:4%; padding-left: 4%;float:left;">
+            <img src="Images/blankIphoneScreen.png" style="height:100%;">
+        </div>
+        <div id="localCommunityGroups" class="explainedSectionText" style="float:right; padding-right: 80px;">
+        <h1 style="color: #66FB97">Reach the Peak</h1>
+            <p style="font-family: CaviarDreams; color:white; font-size: 35px;">Only the most popular Peeks stick around. Your Peeks that gather enough points can summit the weekly Peak! The rest will go. We like to cut out the nonsense.</p>
+        </div>
+    </div>
+    
+    
+    
+    
     <div id="contactUs" class="contactUs">
     
     </div>

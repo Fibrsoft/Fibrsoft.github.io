@@ -82,27 +82,6 @@ html, body {
     margin-left: 50px;
 }
 
-#content1:hover {
-    -webkit-box-shadow:0 0 330px #FFDF22; 
-    -moz-box-shadow: 0 0 330px #FFDF22;
-    -ms-box-shadow: 0 0 330px #FFDF22; 
-    box-shadow:0 0 330px #FFDF22;
-}
-
-#content2:hover {
-    -webkit-box-shadow:0 0 330px #FFDF22; 
-    -moz-box-shadow: 0 0 330px #FFDF22;
-    -ms-box-shadow: 0 0 330px #FFDF22; 
-    box-shadow:0 0 330px #FFDF22;
-}
-
-#content3:hover {
-    -webkit-box-shadow:0 0 330px #FFDF22; 
-    -moz-box-shadow: 0 0 330px #FFDF22;
-    -ms-box-shadow: 0 0 330px #FFDF22; 
-    box-shadow:0 0 330px #FFDF22;
-}
-
 .contactUs {
     background-color: white;
     height: 75%;
@@ -113,8 +92,27 @@ html, body {
     font-family: CaviarDreams;   
 }
 
-.stepHeaderDivs {
-    height: 25%;
-    position: relative;
-    padding-top: 40px;
+.explainedSections {
+    display: inline-block;
+    height: 600px;
+    width: 100%;
+    
+}
+.explainedSectionText {
+    display: inline-block;  
+    position:relative;
+    width: 30%;
+    padding-top: 4%;
+}
+.explainedSectionText h1 {
+    font-family: CaviarDreams;
+    font-size: 42px;
+    
+}
+
+.canoeImages {
+    display: inline-block;
+    text-align: center;
+    width: 40%;
+    height: 600px;
 }
