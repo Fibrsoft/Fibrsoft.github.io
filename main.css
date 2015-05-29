@@ -29,11 +29,11 @@ html, body {
 }
 
 .verticalGap {
-    height: 5%;   
+    height: 50px;   
     
 }
 .menu {
-    height: auto;
+    height: 150px;
     width: 100%;
     display: inline-block;
     align-content: center;
